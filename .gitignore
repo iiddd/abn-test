@@ -1,6 +1,14 @@
+#Local Gradle installation
 .gradle
+
+#Built artefacts
 build
 app/build
+
+#IDE settings
 .idea
 *.iml
 local.properties
+
+#Allure commandline binaries
+.allure

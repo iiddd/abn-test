@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      package="com.abnamro.apps.referenceandroid"
+      android:versionCode="1"
+      android:versionName="1.0">
+
+    <instrumentation android:targetPackage="com.abnamro.apps.referenceandroid.tests"
+                     android:name="io.qameta.allure.android.runners.AllureAndroidJUnitRunner"/>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+</manifest>

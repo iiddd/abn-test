@@ -8,23 +8,28 @@ import com.abnamro.apps.referenceandroid.screens.MainScreen;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.junit.runners.JUnit4;
 
-@RunWith(JUnit4.class)
+import io.qameta.allure.android.runners.AllureAndroidJUnit4;
+import io.qameta.allure.kotlin.Description;
+
+@RunWith(AllureAndroidJUnit4.class)
 public class TestSuite {
 
     @Rule
-    public ActivityScenarioRule<MainActivity> activityRule = new ActivityScenarioRule<>(MainActivity.class);
+    public ActivityScenarioRule<MainActivity> activityRule
+            = new ActivityScenarioRule<>(MainActivity.class);
 
     private final MainScreen mainScreen = new MainScreen();
 
     @Test
+    @Description("My test")
     public void test() {
         mainScreen.checkBackgroundText("Hello World!")
                 .clickKebabMenu();
     }
 
     @Test
+    @Description("My test 2")
     public void test1() {
         mainScreen.checkScreenHeader();
     }
@@ -40,10 +45,4 @@ public class TestSuite {
         mainScreen.clickEnvelopIcon()
                 .checkPopUpIsDisplayed();
     }
-
-    //Description: Click Kebab Menu
-    //Description: Click Settings
-    //Description: Check main screen background text
-    //Description: Check Alignment?
-    //Reporting
 }
