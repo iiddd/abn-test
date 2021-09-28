@@ -88,6 +88,6 @@ sonarqube {
 }
 
 ext {
-    allureVersion = "2.2.5"
+    allureVersion = "2.2.6"
 }
 
