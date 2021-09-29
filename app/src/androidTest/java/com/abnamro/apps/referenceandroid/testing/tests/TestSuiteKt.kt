@@ -1,8 +1,8 @@
-package com.abnamro.apps.referenceandroid.tests
+package com.abnamro.apps.referenceandroid.testing.tests
 
 import androidx.test.ext.junit.rules.activityScenarioRule
 import com.abnamro.apps.referenceandroid.MainActivity
-import com.abnamro.apps.referenceandroid.screens.MainScreenKt
+import com.abnamro.apps.referenceandroid.testing.screens.MainScreenKt
 import io.qameta.allure.android.rules.LogcatRule
 import io.qameta.allure.android.rules.ScreenshotRule
 import io.qameta.allure.android.rules.WindowHierarchyRule
@@ -27,6 +27,11 @@ class TestSuiteKt {
         .around(WindowHierarchyRule())
 
     private val mainScreen = MainScreenKt()
+
+    @Test
+    fun failExampleTest() {
+        mainScreen.checkMainScreenIsLoaded()
+    }
 
     @Test
     fun backgroundTextTest() {

@@ -1,4 +1,4 @@
-package com.abnamro.apps.referenceandroid.screens
+package com.abnamro.apps.referenceandroid.testing.screens
 
 import android.widget.ActionMenuView
 import androidx.appcompat.widget.AppCompatTextView
@@ -11,12 +11,13 @@ import com.abnamro.apps.referenceandroid.R
 import io.qameta.allure.kotlin.Allure.step
 import org.hamcrest.Matchers
 import org.hamcrest.Matchers.allOf
+import org.junit.Assert.assertTrue
 
 class MainScreenKt {
 
-    fun checkMainScreenIsDisplayed(): MainScreenKt {
-        step() {
-
+    fun checkMainScreenIsLoaded(): MainScreenKt {
+        step("Specifically Failed test") {
+            assertTrue(false)
         }
         return this
     }

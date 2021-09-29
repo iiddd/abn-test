@@ -5,7 +5,7 @@
       android:versionCode="1"
       android:versionName="1.0">
 
-    <instrumentation android:targetPackage="com.abnamro.apps.referenceandroid.tests"
+    <instrumentation android:targetPackage="com.abnamro.apps.referenceandroid.testing.tests"
                      android:name="io.qameta.allure.android.runners.AllureAndroidJUnitRunner"/>
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
